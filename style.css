@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.clear-btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 5px #000;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.open-modal {
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #2571ff;
+    color: #fff;
+    border: 1px solid #2571ff;
+    transition: background-color 0.3s;
+}
+
+.open-modal:hover {
+    background-color: #fff;
+    color: #2571ff;
+}
+
+p {
+    text-align: left;
+}
+
+.shadow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.shadow-show {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 280px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-show {
+    display: block;
+}
+
+.modal-title {
+    margin-bottom: 20px;
+}
+
+.modal-field {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.modal-field, .modal-send-btn {
+    width: 100%;
+    display: block;
+}
+
+.modal-field-error {
+    border-color: red;
+}
+
+.modal-send-btn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #2571ff;
+    color: #fff;
+    border: 1px solid #2571ff;
+    transition: background-color 0.3s;
+}
+
+.modal-send-btn:hover {
+    background-color: #fff;
+    color: #2571ff;
+}
+
+.modal-close {
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 32px;
+    height: 32px;
+    background-image: url("./images/icon-close.svg");
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 50%;
+}
